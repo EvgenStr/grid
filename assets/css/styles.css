@@ -2,12 +2,18 @@
 :root {
   --background-color-gray: rgb(238, 239, 241);
   --color-black: rgb(0, 0, 0);
+  --color-white: rgb(255, 255, 255);
   --color-dark-blue: rgb(52, 84, 122);
 }
 
 * {
   font-family: "Roboto", sans-serif !important;
 }
+
+a {
+  outline: none;
+}
+
 .page-header {
   width: 100%;
   padding: 35px 0;
@@ -17,9 +23,11 @@
 .space-between {
   justify-content: space-between;
 }
+
 .align-center {
   align-items: center;
 }
+
 .logo > * {
   text-decoration: none;
   position: relative;
@@ -31,23 +39,44 @@
   line-height: 55px;
   color: var(--color-dark-blue);
 }
+
 .nav-list {
   text-align: end;
   flex-wrap: nowrap;
   overflow: scroll;
 }
+
 .nav-list::-webkit-scrollbar {
   display: none;
 }
 
 .nav-link {
+  position: relative;
   text-decoration: none;
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--color-black);
   padding: 0;
 }
-.nav-list-item:first-child > * {
+.nav-link::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: var(--color-dark-blue);
+  visibility: hidden;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: .25s linear;
+}
+.nav-link:hover::before{
+  visibility: visible;
+  transform: scaleX(1);
+  }
+
+.nav-list>li:first-child > * {
   color: var(--color-dark-blue);
 }
 
@@ -55,42 +84,49 @@ section {
   width: 100%;
   background-color: var(--background-color-gray);
 }
+
 .head-content {
   width: 100%;
   padding-top: 80px;
   padding-bottom: 80px;
 }
+
 .head-image > * {
   padding-top: 25px;
   display: block;
-  /* position: relative; */
-  /* left: 0; */
   margin: 0 auto;
   object-fit: contain;
   max-width: 100%;
 }
+
 .head-card {
   padding-top: 25px;
 }
+
 .head-card .card-header {
   font-size: 48px;
 }
+
 .head-card p {
   font-size: 16px;
   padding-top: 35px;
   padding-bottom: 35px;
   line-height: 27px;
-/* margin-bottom: 50px; */
 }
 
 .btn {
   display: inline-block;
   background-color: var(--color-dark-blue);
-  color:white;
+  color: var(--color-white);
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 400;
   padding: 22px 50px;
   line-height: 27px;
   text-align: center;
+}
+
+.btn:hover{
+background-color: var(--background-color-gray);
+color: var(--color-dark-blue);
 }
