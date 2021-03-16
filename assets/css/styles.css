@@ -35,12 +35,9 @@
   text-align: end;
   flex-wrap: nowrap;
   overflow: scroll;
-
 }
-.nav-list::-webkit-scrollbar{
+.nav-list::-webkit-scrollbar {
   display: none;
-}
-.nav-list-item {
 }
 
 .nav-link {
@@ -64,6 +61,7 @@ section {
   padding-bottom: 80px;
 }
 .head-image > * {
+  padding-top: 25px;
   display: block;
   /* position: relative; */
   /* left: 0; */
@@ -71,9 +69,28 @@ section {
   object-fit: contain;
   max-width: 100%;
 }
+.head-card {
+  padding-top: 25px;
+}
 .head-card .card-header {
   font-size: 48px;
 }
 .head-card p {
   font-size: 16px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  line-height: 27px;
+/* margin-bottom: 50px; */
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--color-dark-blue);
+  color:white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 22px 50px;
+  line-height: 27px;
+  text-align: center;
 }
