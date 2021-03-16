@@ -23,11 +23,12 @@
 .logo > * {
   position: relative;
   bottom: 9px;
-  font-family: "Revalia", cursive;
+  font-family: "Revalia", cursive !important;
   font-size: 48px;
   text-align: center;
   font-weight: 400;
   line-height: 55px;
+  color: var(--color-dark-blue);
 }
 .nav-list {
   text-align: end;
@@ -40,8 +41,9 @@
   text-decoration: none;
   text-transform: uppercase;
   color: var(--color-black);
+  padding: 0;
 }
-.nav-list-item:first-child >*{
+.nav-list-item:first-child > * {
   color: var(--color-dark-blue);
 }
 
@@ -51,10 +53,13 @@ section {
 }
 .head-content {
   width: 100%;
-  padding: 80px 0;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 .head-image > * {
   display: block;
+  /* position: relative; */
+  left: 0;
   margin: 0 auto;
 }
 .head-card .card-header {

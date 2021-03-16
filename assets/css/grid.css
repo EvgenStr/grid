@@ -168,8 +168,11 @@
   .container {
     max-width: 740px;
   }
-  .text-start {
+  .text-md-start {
     text-align: start;
+  }
+  .text-md-end {
+    text-align: right;
   }
   .col-md-1 {
     --width: calc(100% / var(--column-count) * 1);
