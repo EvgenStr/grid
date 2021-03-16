@@ -1,9 +1,16 @@
 @import "./grid.css";
+:root {
+  --background-color-gray: rgb(238, 239, 241);
+  --color-black: rgb(0, 0, 0);
+}
 
+* {
+  font-family: "Roboto", sans-serif;
+}
 .page-header {
   width: 100%;
-  padding: 25px 0;
-  background-color: #eeeff1;
+  padding: 35px 0;
+  background-color: var(--background-color-gray);
 }
 
 .space-between {
@@ -13,8 +20,8 @@
   align-items: center;
 }
 .logo > * {
-  position:relative;
-  bottom: 15px;
+  position: relative;
+  bottom: 9px;
   font-family: "Revalia", cursive;
   font-size: 48px;
   text-align: center;
@@ -27,25 +34,27 @@
 .nav-list-item {
   display: inline-block;
 }
-.nav-list-item > * {
+.nav-link {
   text-decoration: none;
   text-transform: uppercase;
+  color: var(--color-black);
 }
 
 section {
   width: 100%;
-  background-color: #eeeff1;
+  background-color: var(--background-color-gray);
 }
 .head-content {
-  width: 100vw;
+  width: 100%;
+  padding: 80px 0;
 }
 .head-image > * {
   display: block;
   margin: 0 auto;
 }
-.head-card h2{
+.head-card h2 {
   font-size: 48px;
 }
 .head-card p {
-font-size: 16px;
+  font-size: 16px;
 }
