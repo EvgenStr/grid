@@ -21,6 +21,7 @@
   align-items: center;
 }
 .logo > * {
+  text-decoration: none;
   position: relative;
   bottom: 9px;
   font-family: "Revalia", cursive !important;
@@ -32,14 +33,20 @@
 }
 .nav-list {
   text-align: end;
+  flex-wrap: nowrap;
+  overflow: scroll;
+
+}
+.nav-list::-webkit-scrollbar{
+  display: none;
 }
 .nav-list-item {
-  /* display: inline-block; */
-  /* padding: 0 15px; */
 }
+
 .nav-link {
   text-decoration: none;
   text-transform: uppercase;
+  white-space: nowrap;
   color: var(--color-black);
   padding: 0;
 }
@@ -59,8 +66,10 @@ section {
 .head-image > * {
   display: block;
   /* position: relative; */
-  left: 0;
+  /* left: 0; */
   margin: 0 auto;
+  object-fit: contain;
+  max-width: 100%;
 }
 .head-card .card-header {
   font-size: 48px;
