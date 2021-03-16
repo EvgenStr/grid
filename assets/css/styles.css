@@ -1,0 +1,49 @@
+@import "./grid.css";
+
+.page-header {
+  width: 100%;
+  padding: 25px 0;
+  background-color: #eeeff1;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+.align-center {
+  align-items: center;
+}
+.logo > * {
+  font-family: "Revalia", cursive;
+  font-size: 48px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 55px;
+}
+.nav-list {
+  text-align: end;
+}
+.nav-list-item {
+  display: inline-block;
+}
+.nav-list-item > * {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+section {
+  width: 100%;
+  background-color: #eeeff1;
+}
+.head-content {
+  width: 100vw;
+}
+.head-image > * {
+  display: block;
+  margin: 0 auto;
+}
+.head-card h2{
+  font-size: 48px;
+}
+.head-card p {
+font-size: 16px;
+}
