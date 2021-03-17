@@ -101,6 +101,7 @@ a {
 
 .card {
   padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .card .card-header {
@@ -113,7 +114,9 @@ a {
   padding-bottom: 35px;
   line-height: 27px;
 }
-
+.card-image{
+  padding-top: 15px;
+}
 .btn {
   display: inline-block;
   background-color: var(--color-dark-blue);
@@ -129,4 +132,8 @@ a {
 .btn:hover {
   background-color: var(--background-color-gray);
   color: var(--color-dark-blue);
+}
+
+.portfolio{
+  padding: 40px;
 }

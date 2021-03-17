@@ -13,12 +13,6 @@
   padding-right: var(--padding-value);
 }
 
-.font-s-32 {
-  font-size: 32px;
-}
-.font-s-48 {
-  font-size: 48px;
-}
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -46,7 +40,19 @@
 .margin-0-auto {
   margin: 0 auto;
 }
+.no-wrap{
+  flex-wrap: nowrap;
+}
+.font-s-32 {
+  font-size: 32px;
+}
+.font-s-48 {
+  font-size: 48px;
+}
 
+.d-flex{
+  display: flex;
+}
 .col-1 {
   --width: calc(100% / var(--column-count) * 1);
   flex-basis: var(--width);
@@ -107,18 +113,12 @@
   flex-basis: var(--width);
   max-width: var(--width);
 }
-/* xs
-  <576px
-  sm
-  ≥576px
-  md
-  ≥768px
-  lg
-  ≥992px
-  xl
-  ≥1200px
-  xxl
-  ≥1400px */
+/*xs  <576px
+  sm  ≥576px
+  md  ≥768px
+  lg  ≥992px
+  xl  ≥1200px
+  xxl ≥1400px */
 @media screen and (min-width: 576px) {
   .container {
     max-width: 540px;
