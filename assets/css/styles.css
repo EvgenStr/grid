@@ -12,6 +12,7 @@
 
 a {
   outline: none;
+  text-decoration: none;
 }
 
 .page-header {
@@ -85,7 +86,6 @@ a {
   background-color: var(--color-dark-blue);
 }
 
-
 .head-image > * {
   padding-top: 25px;
   display: block;
@@ -125,7 +125,7 @@ a {
   padding: 22px 50px;
   line-height: 27px;
   text-align: center;
-  }
+}
 
 .btn:hover {
   background-color: var(--color-white);
@@ -209,30 +209,37 @@ a {
 }
 
 /* form */
-.send-message *{
+.send-message * {
   border: none;
 }
-.input{
+.input {
   width: 47%;
   padding: 10px 15px;
   margin-bottom: 15px;
 }
-.message{
-  resize: none;  padding: 10px 15px;
-
+.message {
+  resize: none;
+  padding: 10px 15px;
 }
-.send-message .btn{
+.send-message .btn {
   margin-top: 15px;
 }
 /* footer */
-footer{
+footer {
   color: var(--color-white);
 }
-.footer-left>p:first-child{
+.footer-left > p:first-child {
   font-size: 21px;
   padding-bottom: 22px;
 }
-.footer-left>p:nth-child(2n){
+.footer-left > p:nth-child(2n) {
   font-size: 13px;
+}
 
+.footer-right * {
+  color: var(--color-white);
+  display: inline-block;
+}
+.footer-icon + .footer-icon{
+  margin-left: 10px;
 }
