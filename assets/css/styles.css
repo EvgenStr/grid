@@ -85,17 +85,7 @@ a {
   background-color: var(--color-dark-blue);
 }
 
-.padding-Y-80 {
-  /* width: 100%; */
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
 
-.padding-Y-30 {
-  /* width: 100%; */
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
 .head-image > * {
   padding-top: 25px;
   display: block;
@@ -179,8 +169,9 @@ a {
 }
 .image-wrap {
   background-color: var(--color-dark-blue);
-  position: relative;
+  /* position: relative; */
 }
+
 .image-wrap a {
   display: block;
   width: 100%;
@@ -188,30 +179,32 @@ a {
   position: relative;
   background-position: center;
   background-size: contain;
-
 }
 
-.image-wrap a:hover::before {
-  /* display: none; */
+.image-wrap a::before {
+  opacity: 0;
   content: url("../images/icons/view.png");
   position: absolute;
   top: calc((50%) - 50px);
   left: calc((50%) - 50px);
   z-index: 72;
-
 }
 
-.image-wrap a:hover::after {
+.image-wrap a::after {
   content: "";
   background-color: var(--color-dark-blue);
-  opacity: 0.6;
+  opacity: 0;
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
+  transition: opacity 0.47s ease-out;
 }
-/* .image-wrap a:hover::before {
-  display: block;
-  
-} */
+.image-wrap a:hover::before {
+  opacity: 1;
+}
+.image-wrap a:hover:after {
+  opacity: 0.6;
+}
+
