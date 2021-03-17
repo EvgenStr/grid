@@ -20,14 +20,6 @@ a {
   background-color: var(--background-color-gray);
 }
 
-.space-between {
-  justify-content: space-between;
-}
-
-.align-center {
-  align-items: center;
-}
-
 .logo > * {
   text-decoration: none;
   position: relative;
@@ -82,9 +74,15 @@ a {
   color: var(--color-dark-blue);
 }
 
-section {
+.wide-section {
   width: 100%;
+}
+.bg-gray{
   background-color: var(--background-color-gray);
+}
+
+.bg-dark-blue{
+  background-color: var(--color-dark-blue);
 }
 
 .head-content {
@@ -101,15 +99,15 @@ section {
   max-width: 100%;
 }
 
-.head-card {
+.card {
   padding-top: 25px;
 }
 
-.head-card .card-header {
-  font-size: 48px;
+.card .card-header {
+  text-transform: capitalize;
 }
 
-.head-card p {
+.card p {
   font-size: 16px;
   padding-top: 35px;
   padding-bottom: 35px;
