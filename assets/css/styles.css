@@ -85,12 +85,17 @@ a {
   background-color: var(--color-dark-blue);
 }
 
-.head-content {
-  width: 100%;
+.padding-Y-80 {
+  /* width: 100%; */
   padding-top: 80px;
   padding-bottom: 80px;
 }
 
+.padding-Y-30 {
+  /* width: 100%; */
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .head-image > * {
   padding-top: 25px;
   display: block;
