@@ -240,6 +240,6 @@ footer {
   color: var(--color-white);
   display: inline-block;
 }
-.footer-icon + .footer-icon{
+.footer-icon + .footer-icon {
   margin-left: 10px;
 }
