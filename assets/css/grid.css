@@ -23,6 +23,13 @@
   padding-left: var(--gutter-size);
   padding-right: var(--gutter-size);
 }
+
+.no-gutter{
+  margin:0;
+}
+.no-padding{
+  padding: 0;
+}
 .text-center {
   text-align: center;
 }
