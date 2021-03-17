@@ -236,10 +236,12 @@ footer {
   font-size: 13px;
 }
 
-.footer-right * {
-  color: var(--color-white);
+.footer-icon {  color: var(--color-white);
   display: inline-block;
+  padding-top: 10px;
+
 }
 .footer-icon + .footer-icon {
+
   margin-left: 10px;
 }
