@@ -125,10 +125,10 @@ a {
   padding: 22px 50px;
   line-height: 27px;
   text-align: center;
-}
+  }
 
 .btn:hover {
-  background-color: var(--background-color-gray);
+  background-color: var(--color-white);
   color: var(--color-dark-blue);
 }
 
@@ -208,3 +208,31 @@ a {
   opacity: 0.6;
 }
 
+/* form */
+.send-message *{
+  border: none;
+}
+.input{
+  width: 47%;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+}
+.message{
+  resize: none;  padding: 10px 15px;
+
+}
+.send-message .btn{
+  margin-top: 15px;
+}
+/* footer */
+footer{
+  color: var(--color-white);
+}
+.footer-left>p:first-child{
+  font-size: 21px;
+  padding-bottom: 22px;
+}
+.footer-left>p:nth-child(2n){
+  font-size: 13px;
+
+}
