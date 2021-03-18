@@ -3,6 +3,7 @@
   width: 100%;
   object-fit: contain;
 }
+
 .image-wrap {
   background-color: var(--color-dark-blue);
 }
