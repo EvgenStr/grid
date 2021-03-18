@@ -1,0 +1,22 @@
+footer {
+  color: var(--color-white);
+}
+
+.footer-left > p:first-child {
+  font-size: 21px;
+  padding-bottom: 22px;
+}
+
+.footer-left > p:nth-child(2n) {
+  font-size: 13px;
+}
+
+.footer-icon {
+  color: var(--color-white);
+  display: inline-block;
+  padding-top: 10px;
+}
+
+.footer-icon + .footer-icon {
+  margin-left: 10px;
+}
