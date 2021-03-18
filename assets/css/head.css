@@ -1,0 +1,132 @@
+.page-header {
+  width: 100%;
+  padding: 35px 0;
+  background-color: var(--background-color-gray);
+}
+
+.logo > * {
+  text-decoration: none;
+  position: relative;
+  bottom: 9px;
+  font-family: "Revalia", cursive !important;
+  font-size: 48px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 55px;
+  color: var(--color-dark-blue);
+}
+
+.nav-list {
+  /* visibility: hidden; */
+  text-align: center;
+  flex-wrap: nowrap;
+  background-color: var(--background-color-gray);
+  /* overflow: scroll; */
+}
+
+.nav-list::-webkit-scrollbar {
+  /* display: none; */
+}
+
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--color-black);
+  padding: 0;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: var(--color-dark-blue);
+  visibility: hidden;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: 0.25s linear;
+}
+
+.nav-link:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.nav-list > li:first-child > * {
+  color: var(--color-dark-blue);
+}
+
+.nav-menu {
+  /* display: none; */
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  top: 90px;
+  right: 0;
+  left: 0;
+}
+
+.menu-tooggle {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: end; */
+}
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+@media screen and (min-width: 992px) {
+  .menu-tooggle {
+    display: none;
+  }
+  .nav-list {
+    text-align: end;
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-menu {
+    display: block;
+    position: static;
+  }
+}
+@media screen and (max-width: 991px) {
+  .nav-menu {
+    max-height: 0px;
+  }
+  .nav-list-item + .nav-list-item{
+    margin-top: 15px;
+  }
+  .nav-list{
+    padding: 2rem 0;
+border-top:2px solid var(--color-dark-blue) ;
+border-bottom: 2px solid var(--color-dark-blue) ;
+  }
+}
+
+.active {
+  max-height: 300px;
+}

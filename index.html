@@ -11,36 +11,42 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
     integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ=="
     crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./assets/css/reset.css" />
+    <script src="./assets/js/script.js"></script>
   <link rel="stylesheet" href="./assets/css/styles.css" />
 </head>
 
 <body>
   <header class="page-header">
     <div class="container">
-      <div class="row  justify-between align-center">
+      <div class="row justify-between align-center relative">
         <div class="col-2 logo"><a href="#">WD</a></div>
-        <nav class="col-7">
-          <ul class="nav-list row no-gutter justify-between">
-            <li>
+        <nav class="col-12 col-lg-7 nav-menu">
+          <ul class="nav-list no-gutter ">
+            <li class="nav-list-item">
               <a class="nav-link" href="#">MAIN</a>
             </li>
-            <li>
+            <li class="nav-list-item">
               <a class="nav-link" href="#">About US</a>
             </li>
-            <li>
+            <li class="nav-list-item">
               <a class="nav-link" href="#">Works</a>
             </li>
-            <li>
+            <li class="nav-list-item">
               <a class="nav-link" href="#">process</a>
             </li>
-            <li>
+            <li class="nav-list-item">
               <a class="nav-link" href="#">contacts</a>
             </li>
           </ul>
         </nav>
+        <div class="menu-tooggle" onclick="toogleNavMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
       </div>
     </div>
+
   </header>
 
   <section class="wide-section bg-gray">
